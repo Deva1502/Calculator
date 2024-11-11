@@ -14,7 +14,7 @@ const History = ({ history,setHistory, addToHistory, setCalculation, handleToggl
     <div className="history">
       <div className="history-header">
         <button onClick={handleToggleHistory}>X</button>
-        <span>History</span>
+        <h1>History</h1>
       </div>
       <div className="history-items">
         {history.map((calculation, index) => (

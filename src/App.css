@@ -1,27 +1,29 @@
-
 body, html {
   margin: 0;
   padding: 0;
   height: 100vh;
   width: 100vw;
   overflow: hidden;
+  background: linear-gradient(to bottom right, #ff7e5f, #feb47b, #86A8E7);
 }
 
 body::-webkit-scrollbar {
   display: none;
 }
-.app{
+
+.app {
   height: 100vh;
   width: 100vw;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
 }
 
 .calculator-container {
   width: 50%;
   height: 100vh;
   float: left;
-  background-color: #f5f5f5;
+  background: linear-gradient(to bottom right, #76b852, #8DC26F);
   border-right: 2px solid #707070;
 }
 
@@ -51,13 +53,14 @@ body::-webkit-scrollbar {
 .calculator-header span {
   font-size: 22px;
   font-weight: 500;
-
 }
-.calculation-text-body{
+
+.calculation-text-body {
   width: 100%;
   display: flex;
   justify-content: flex-end;
 }
+
 .calculation-text {
   padding: 20px;
   font-size: 34px;
@@ -67,25 +70,22 @@ body::-webkit-scrollbar {
   hyphens: auto;
 }
 
-
 .calculator-buttons {
- display: flex;
- justify-content: flex-end;
- flex-direction: column;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
   height: 50%;
   padding: 10px;
 }
-.calc-row{
-  display: flex;
 
+.calc-row {
+  display: flex;
 }
 
 .calculator-buttons button {
   width: 100%;
-  padding:16px 15px;
+  padding: 16px 15px;
   font-size: 20px;
-
-  
   cursor: pointer;
   font-weight: 500;
   border: 2px solid #707070;
@@ -93,17 +93,17 @@ body::-webkit-scrollbar {
 }
 
 .calculator-buttons button:hover {
-  background-color: #ccc;
+  background-color: yellow;
 }
-
 
 .history {
   top: 0;
   width: 50%;
   height: 100vh;
   overflow-y: auto;
-  background-color: #f5f5f5;
-  float: right;
+  background: linear-gradient(to bottom right, #52b5b8, #760d39,yellow);
+
+  float:left;
   padding: 10px 0px;
 }
 
@@ -121,7 +121,6 @@ body::-webkit-scrollbar {
   cursor: pointer;
   font-size: 20px;
   margin-right: 10px;
-  
 }
 
 .history-header span {
@@ -132,7 +131,7 @@ body::-webkit-scrollbar {
 }
 
 .history-items div {
-  padding: 10px ;
+  padding: 10px;
   cursor: pointer;
 }
 
@@ -154,18 +153,19 @@ body::-webkit-scrollbar {
 .clear-btn:hover {
   background-color: #ccc;
 }
+
 @media (max-width: 600px) {
   .app {
-    flex-direction: column;
+      flex-direction: column;
   }
 
   .calculator-container,
   .history {
-    width: 100%;
-    height: 50vh;
+      width: 100%;
+      height: 50vh;
   }
 
   .calculator-buttons {
-    height: 100%;
+      height: 100%;
   }
 }
